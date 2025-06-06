@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>The Story of Prophecy Explorer</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script>
@@ -13,11 +16,22 @@
         font-family: sans-serif;
       }
 
+      h1 {
+        font-family: Montserrat;
+      }
+      
+      .montserrat-<uniquifier> {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+      }
+
       .viewer-wrapper {
         width: 90%;
         max-width: 1200px;
         margin: 50px auto;
-        border: 1px solid #ccc;
+        background-color: white;
       }
 
       #openseadragon {
@@ -27,7 +41,7 @@
     </style>
   </head>
   <body>
-    <h1 style="text-align: center;">The Story of Prophecy Explorer</h1>
+    <h1 style="text-align: left;">The Story of Prophecy Explorer</h1>
 
     <div class="viewer-wrapper">
       <div id="openseadragon"></div>

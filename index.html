@@ -73,3 +73,16 @@
             maxZoomPixelRatio: 2,
             visibilityRatio: 1,
             minZoomLevel: 1
+          });
+        }
+        
+        // Scroll to the viewer smoothly
+        document.getElementById('viewerContainer').scrollIntoView({ behavior: 'smooth' });
+      }
+
+      function exitViewer() {
+        document.getElementById('viewerContainer').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>

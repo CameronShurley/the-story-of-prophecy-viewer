@@ -7,17 +7,32 @@
     <style>
       html, body {
         margin: 0;
+        padding: 0;
         height: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
+        font-family: sans-serif;
       }
+
+      .viewer-wrapper {
+        width: 90%;
+        max-width: 1200px;
+        margin: 50px auto;
+        border: 1px solid #ccc;
+      }
+
       #openseadragon {
         width: 100%;
-        height: 100vh;
+        height: 800px;
       }
     </style>
   </head>
   <body>
-    <div id="openseadragon"></div>
+    <h1 style="text-align: center;">The Story of Prophecy Explorer</h1>
+
+    <div class="viewer-wrapper">
+      <div id="openseadragon"></div>
+    </div>
+
     <script>
       OpenSeadragon({
         id: "openseadragon",
